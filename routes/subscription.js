@@ -1,7 +1,7 @@
 var Subscription = require('models/subscription').Subscription,
     validator = require('validator');
 
-var subscribe = function (req, res, next) {
+var subscribe = function (req, res) {
     var mail = req.body.mail;
     console.log(mail);
     if (mail && validator.isEmail(mail)) {
