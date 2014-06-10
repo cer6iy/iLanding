@@ -1,0 +1,292 @@
+﻿html,body{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:200;
+}
+
+.col-xs-8, .col-xs-4, .col-xs-12{
+	padding:0;
+}
+
+.col-sm-12, .col-sm-1, .col-sm-7{
+	padding:0;
+}
+
+h1,h2{
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:200;
+	margin-left:30px;
+	margin:15px 0 0 0;
+}
+
+h2{
+	margin-bottom:80px;
+}
+
+p{
+	font-size:17px;
+}
+
+p span{
+	font-size:14px;
+	margin-right:8px;
+}
+
+.full-container{
+	height:100%;
+	background-image: url(../img/blue-bokeh.jpg);
+	background-size:100% 100%;
+	padding:0;
+	overflow:hidden;
+}
+
+.container{
+	height:100%;
+}
+
+.block{
+	position:relative;
+	height:400px;
+	margin-top:200px;
+	padding-top:10px;
+	background:rgba(0,0,0,0.5);
+	color:white;
+	text-align:center;
+}
+
+.block img{
+	max-height:70px;
+}
+
+.block a{
+	position:absolute;
+	width:30px;
+	height:30px;
+	left:-30px;
+	top:0;
+	padding-top:6px;
+	background:blue;
+	text-decoration:none;
+	color:white;
+	text-align:center;
+	transition:all 0.2s ease;
+}
+
+.block a:nth-of-type(1){background:rgba(2,97,69,0.4);}
+.block a:nth-of-type(2){margin-top:30px;background:rgba(30,147,97,0.4);}
+.block a:nth-of-type(3){margin-top:60px;background:rgba(76,169,101,0.4);}
+.block a:nth-of-type(4){margin-top:90px;background:rgba(172,220,139,0.4);}
+
+.block a:hover{
+	background:#0C6F71;
+}
+
+.side-block{
+	height:400px;
+	margin-top:200px;
+}
+
+
+/** FORM **/
+.form-horizontal,.form-group{
+	height:45px;
+	margin-top:10px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight:400;
+}
+
+.form-horizontal .form-group{
+	margin:0;
+}
+
+.form-control{
+	background:rgba(0,0,0,0.05);
+	border-radius:0;
+	height:100%;
+	font-size:14px;
+	color:white;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	margin-bottom:15px;
+	border:1px solid rgba(255,255,255,0.5);
+}
+
+.form-control:focus{
+	border-color:rgba(255,255,255,0.8);
+	box-shadow:none;
+}
+
+.form-control::-moz-placeholder{color:rgba(255,255,255,0.6);}
+.form-control:-moz-placeholder{color:rgba(255,255,255,0.6);}
+.form-control:-webkit-input-placeholder{color:rgba(255,255,255,0.6);}
+.form-control:-ms-input-placeholder{color:rgba(255,255,255,0.6);}
+
+.btn-send{
+	background:rgba(157, 237, 212, 0.57);
+	border-radius:0;
+	height:100%;
+	width:100%;
+	font-size:16px;
+	color:white;
+	border:1px solid rgba(200,200,200,0.5);
+	border-left:0;
+	transition:all 0.1s ease-out;
+}
+
+.btn-send:hover{
+	background:#0C6F71;
+}
+
+.form-send{
+	height:100%;
+}
+/** END FORM **/
+
+
+/* COUNTDOWN */ 
+#defaultCountdown{
+	color:white;
+	position:relative;
+	height:100%;
+}
+
+.countdown-row {
+	display: block;
+	height:100%;
+}
+
+.countdown-section{
+	border-color: rgba(218,218,218,0.8);
+	display: inline-block;
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding: 13px 20px 4px 20px;
+	text-transform: uppercase;
+	width: 100%;
+	height:25%;
+	-webkit-box-sizing:	border-box;
+	-moz-box-sizing:	border-box;
+	box-sizing:			border-box;
+	box-shadow:-1px 1px 3px rgba(0,0,0,0.2);
+	cursor:pointer;
+}
+
+.countdown-section:last-of-type{
+	background:rgba(2,97,69,0.4);
+}
+
+.countdown-section:nth-of-type(1){
+	background:rgba(172,220,139,0.4);
+}
+
+.countdown-section:nth-of-type(2){
+	background:rgba(76,169,101,0.4);
+}
+
+.countdown-section:nth-of-type(3){
+	background:rgba(30,147,97,0.4);
+}
+
+.countdown-amount {
+	display: block;
+	font-size: 40px;
+	font-weight: 200;
+	letter-spacing: normal;
+	line-height: 1;
+	padding-bottom: 11px;
+	text-align: center;
+}
+
+.countdown-period{
+	text-align:left;
+	font-size:12px;
+	font-weight:400;
+}
+/** END COUNTDOWN **/
+
+@media only screen and (max-width:1200px) {
+	
+	.countdown-amount{
+		font-size:30px;
+	}
+	
+	.countdown-period{
+		font-size:11px;
+	}
+	
+	.countdown-section{
+		padding:19px 10px 4px 10px;
+	}
+
+}
+
+@media only screen and (max-width:992px) {
+	
+	.countdown-amount{
+		font-size:20px;
+	}
+	
+	.countdown-period{
+		font-size:10px;
+	}
+	
+	.countdown-section{
+		padding:22px 10px 4px 7px;
+	}
+	
+	.block{
+		margin-top:150px;
+	}
+	
+	.side-block{
+		margin-top:150px;
+	}
+	
+}
+
+@media only screen and (max-width:768px) {
+
+	h1{
+		font-size:30px;
+	}
+	
+	h2{
+		font-size:20px;
+		margin-bottom:40px;
+	}
+	
+	.full-container{
+		background-size:768px 100%;
+	}
+	
+	.btn-send{
+		font-size:12px;
+	}
+	
+	.block{
+		margin-top:40px;
+		height:350px;
+	}
+
+	.side-block{
+		margin-top:0;
+	}
+	
+	.countdown-section{
+		width:25%;
+		height:20%;
+		padding:12px 10px 4px 7px;
+	}
+	
+	.countdown-period{
+		font-size:9px;
+	}
+	
+	.countdown-amount{
+		font-size:26px;
+	}
+
+}

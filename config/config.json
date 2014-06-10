@@ -1,0 +1,6 @@
+{
+    "port": 3000,
+    "mongoose": {
+        "uri": "mongodb://user:1233356@kahana.mongohq.com:10044/subscriptions"
+    }
+}
