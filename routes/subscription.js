@@ -12,17 +12,17 @@ var subscribe = function (req, res) {
                 newSub = new Subscription({mail: mail});
                 newSub.save(function (err, s, affected) {
                     if (!err) {
-                        res.send({status: 201});
+                        res.send({status: 201}); // success
                     } else {
-                        res.send({status: 500});
+                        res.send({status: 500}); //server error
                     }
                 })
             } else {
-                res.send({status: 302});
+                res.send({status: 302}); //duplicate
             }
         })
     } else {
-        res.send({status: 400});
+        res.send({status: 400}); //bad request
     }
 }
 
